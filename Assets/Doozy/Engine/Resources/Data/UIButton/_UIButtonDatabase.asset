@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 889794c411054f7ca8e6fbdc6728c846, type: 3}
+  m_Name: _UIButtonDatabase
+  m_EditorClassIdentifier: 
+  DatabaseType: 0
+  CategoryNames:
+  - Custom
+  - Example
+  - General
+  - Main Menu
+  - Upgrade Menu
+  - Shop Menu
+  Categories:
+  - {fileID: 11400000, guid: 40f9e81ff80114a47a3721228ba749ed, type: 2}
+  - {fileID: 11400000, guid: 62990610ea0e48b42a03d62dce3f42ee, type: 2}
+  - {fileID: 11400000, guid: 46cf8b641f62bc94ca83d86c29c7b524, type: 2}
+  - {fileID: 11400000, guid: c369260cbec21a44ba832adf2771ae6c, type: 2}
+  - {fileID: 11400000, guid: 849789f545eb1234fa3c73fe1c463398, type: 2}
