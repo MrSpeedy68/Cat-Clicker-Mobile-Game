@@ -201,7 +201,9 @@ public class Upgrades : MonoBehaviour
 
     public void ChonkerButton()
     {
-       
+        UpgradesMethod(ref ChonkerLevel, ref ChonkerProduction, ref ChonkerPrice, ref ChonkerProdIncrease, ref ChonkerMultiplayer, ref ChonkerPriceText, ref ChonkerLevelText);
+
+/*       
         if (catClick.Score != 0 && catClick.Score >= ChonkerPrice) //Check if the score is higher or equal to the price
         {
             catClick.Score = catClick.Score - ChonkerPrice; // Removes the amount of score it cost to purchase
@@ -218,9 +220,25 @@ public class Upgrades : MonoBehaviour
             Debug.Log("Production is: " + ChonkerProduction);
 
         }
-        else Debug.Log("You're Poor!");
+        else Debug.Log("You're Poor!");*/
     }
 
+
+    public void UpgradesMethod(ref int Level, ref float Production, ref float Price, ref float ProdIncrease, ref int Multiplyer, ref TMP_Text PriceText, ref TMP_Text LevelText)
+    {
+        if (catClick.Score != 0 && catClick.Score >= Price)
+        {
+            catClick.Score = catClick.Score - Price;
+
+            Level++;
+            Production = (ProdIncrease * Level) * Multiplyer;
+            Price = Mathf.Ceil(100 * Mathf.Pow(GlobalMultiplyer, Level));
+
+            PriceText.text = "" + UpgradesFormatting(Price);
+            LevelText.text = "" + Level;
+        }
+        else Debug.Log("Broke");
+    }
 
 
     //Bee Cat Upgrade
@@ -514,27 +532,5 @@ public class Upgrades : MonoBehaviour
         }
     }
 
-/*    timesClicked++;
 
-        if (timesClicked == 0)
-        {
-            MultiplePurchaseText.text = "X1";
-        }
-        else if(timesClicked == 1)
-        {
-            MultiplePurchaseText.text = "X10";
-        }
-        else if (timesClicked == 2)
-        {
-            MultiplePurchaseText.text = "X25";
-        }
-        else if (timesClicked == 3)
-        {
-            MultiplePurchaseText.text = "X50";
-        }
-        else if (timesClicked == 4)
-        {
-            MultiplePurchaseText.text = "X100";
-            timesClicked = 0;
-        }*/
 }

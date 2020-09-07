@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Doozy.Engine.UI;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
@@ -13,22 +14,36 @@ public class CatClick : MonoBehaviour
     public double Score; //Main Score displayed ontop of the screen
     public int ScorePerClick; //The amount of score that will be added per click
     public int ScoreMultiplyer = 1; //The % amount the score will multiply by
-    private Button CatBtn;
+    //private Button CatBtn;
     public TMP_Text MainScoreText; //Grab the Text from the button
     private Camera cam;
     SpooteDrops spooteDrops;
+    AngerBar angerBar;
+    ProgressBar progressBar;
     public int totalClicksPerSecond = 0; //Used to calculate the clicks per second
     public int currentClicksPerSecond = 0;
 
 
     public GameObject GameEventManager;
+    private Button catButton;
+    private UIButton catUIButton;
+
     public void Start()
     {
         //Load();
         cam = Camera.main;
         spooteDrops = GameEventManager.GetComponent<SpooteDrops>(); //Find The Main cat click script
+        angerBar = GameEventManager.GetComponent<AngerBar>();
+        progressBar = FindObjectOfType<ProgressBar>();
+
+        catButton = gameObject.GetComponent<Button>();
+        catUIButton = gameObject.GetComponent<UIButton>();
+
+        //Wont be needed later
         TimerText.text = timer.ToString();
         MultiplyerText.text = "1X";
+        //////////////
+        
         InvokeRepeating("ClicksPerSecondCalculation", 0f, 1f); //Call the ClickPerSecondCalculation Method every second
         InvokeRepeating("Save", 0f, 5f); //Call the save method every 5 seconds
     }
@@ -39,13 +54,17 @@ public class CatClick : MonoBehaviour
     public GameObject DroppingSnack;
     public float RotationSpeed = 50.0f;
     GameObject DropSnack;
+
+
     public void ClickOnCat()
     {
         Score += ScorePerClick * ScoreMultiplyer; //Add 1 to the score every time you click   
         currentClicksPerSecond++;
-        Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
+        //Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
 
-        FloatingTextController.CreateFloatingText("+" + (ScorePerClick * ScoreMultiplyer).ToString(), mousePosition);
+        //FloatingTextController.CreateFloatingText("+" + (ScorePerClick * ScoreMultiplyer).ToString(), mousePosition);
+
+        angerBar.ReduceAngerBar();
 
         Vector3 SnackPoint = new Vector3();
         SnackPoint = cam.ScreenToWorldPoint(new Vector3(UnityEngine.Random.Range(cam.pixelWidth, 0f), cam.pixelHeight - 5f, cam.nearClipPlane + 1f));  //Make a new Vector2 at random coordinates above the screen
@@ -71,6 +90,17 @@ public class CatClick : MonoBehaviour
             TimerText.text = timer.ToString();
         }
         else timer = 0;
+
+        if (progressBar.current == 0)
+        {
+            catButton.enabled = !catButton.enabled;
+            catUIButton.enabled = !catUIButton.enabled;
+        }
+        else
+        {
+            catButton.enabled = true;
+            catUIButton.enabled = true;
+        }
 
     }
 
