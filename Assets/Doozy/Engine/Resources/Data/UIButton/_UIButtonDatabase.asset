@@ -18,11 +18,13 @@ MonoBehaviour:
   - Example
   - General
   - Main Menu
-  - Upgrade Menu
   - Shop Menu
+  - Upgrade Menu
+  - Additional Upgrades Menu
   Categories:
   - {fileID: 11400000, guid: 40f9e81ff80114a47a3721228ba749ed, type: 2}
   - {fileID: 11400000, guid: 62990610ea0e48b42a03d62dce3f42ee, type: 2}
   - {fileID: 11400000, guid: 46cf8b641f62bc94ca83d86c29c7b524, type: 2}
   - {fileID: 11400000, guid: c369260cbec21a44ba832adf2771ae6c, type: 2}
   - {fileID: 11400000, guid: 849789f545eb1234fa3c73fe1c463398, type: 2}
+  - {fileID: 11400000, guid: 2898d826b23fb844fa3b8fd6fe8746d8, type: 2}

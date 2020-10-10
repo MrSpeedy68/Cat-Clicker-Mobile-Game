@@ -15,103 +15,103 @@ public class Upgrades : MonoBehaviour
     public void Load()
     {
         //Load Kitten Upgrade
-        KittenLevel = PlayerPrefs.GetInt("KittenLevel", 0);
-        KittenProduction = PlayerPrefs.GetFloat("KittenProduction", 0f);
-        KittenPrice = PlayerPrefs.GetFloat("KittenPrice", 20f);
-        KittenProdIncrease = PlayerPrefs.GetFloat("KittenProdIncrease", 0.1f);
+        tabbyCatLevel = PlayerPrefs.GetInt("tabbyCatLevel", 0);
+        tabbyCatProduction = PlayerPrefs.GetFloat("tabbyCatProduction", 0f);
+        tabbyCatPrice = PlayerPrefs.GetFloat("tabbyCatPrice", 20f);
+        tabbyCatProdIncrease = PlayerPrefs.GetFloat("tabbyCatProdIncrease", 0.1f);
 
         //Load Chonker Upgrade
-        ChonkerLevel = PlayerPrefs.GetInt("ChonkerLevel", 0);
-        ChonkerProduction = PlayerPrefs.GetFloat("ChonkerProduction", 0f);
-        ChonkerPrice = PlayerPrefs.GetFloat("ChonkerPrice", 100f);
-        ChonkerProdIncrease = PlayerPrefs.GetFloat("ChonkerProdIncrease", 1f);
+        abyssinianCatLevel = PlayerPrefs.GetInt("abyssinianCatLevel", 0);
+        abyssinianCatProduction = PlayerPrefs.GetFloat("abyssinianCatProduction", 0f);
+        abyssinianCatPrice = PlayerPrefs.GetFloat("abyssinianCatPrice", 100f);
+        abyssinianCatProdIncrease = PlayerPrefs.GetFloat("abyssinianCatProdIncrease", 1f);
 
         //Load Bee Cat Upgrade
-        BeeCatLevel = PlayerPrefs.GetInt("BeeCatLevel", 0);
-        BeeCatProduction = PlayerPrefs.GetFloat("BeeCatProduction", 0f);
-        BeeCatPrice = PlayerPrefs.GetFloat("BeeCatPrice", 1000f);
-        BeeCatProdIncrease = PlayerPrefs.GetFloat("BeeCatProdIncrease", 9f);
+        munchkinCatLevel = PlayerPrefs.GetInt("munchkinCatLevel", 0);
+        munchkinCatProduction = PlayerPrefs.GetFloat("munchkinCatProduction", 0f);
+        munchkinCatPrice = PlayerPrefs.GetFloat("munchkinCatPrice", 1000f);
+        munchkinCatProdIncrease = PlayerPrefs.GetFloat("munchkinCatProdIncrease", 9f);
 
         //Load Lasagne Boy Upgrade
-        LasagneBoyLevel = PlayerPrefs.GetInt("LasagneBoyLevel", 0);
-        LasagneBoyProduction = PlayerPrefs.GetFloat("LasagneBoyProduction", 0f);
-        LasagneBoyPrice = PlayerPrefs.GetFloat("LasagneBoyPrice", 12500f);
-        LasagneBoyProdIncrease = PlayerPrefs.GetFloat("LasagneBoyProdIncrease", 50f);
+        siameseCatLevel = PlayerPrefs.GetInt("siameseCatLevel", 0);
+        siameseCatProduction = PlayerPrefs.GetFloat("siameseCatProduction", 0f);
+        siameseCatPrice = PlayerPrefs.GetFloat("siameseCatPrice", 12500f);
+        siameseCatProdIncrease = PlayerPrefs.GetFloat("siameseCatProdIncrease", 50f);
 
         //Load Pirate Cat Upgrade
-        PirateBoyLevel = PlayerPrefs.GetInt("PirateBoyLevel", 0);
-        PirateBoyProduction = PlayerPrefs.GetFloat("PirateBoyProduction", 0f);
-        PirateBoyPrice = PlayerPrefs.GetFloat("PirateBoyPrice", 125000f);
-        PirateBoyProdIncrease = PlayerPrefs.GetFloat("PirateBoyProdIncrease", 250f);
+        scottishFoldCatLevel = PlayerPrefs.GetInt("scottishFoldCatLevel", 0);
+        scottishFoldCatProduction = PlayerPrefs.GetFloat("scottishFoldCatProduction", 0f);
+        scottishFoldCatPrice = PlayerPrefs.GetFloat("scottishFoldCatPrice", 125000f);
+        scottishFoldCatProdIncrease = PlayerPrefs.GetFloat("scottishFoldCatProdIncrease", 250f);
 
         //Load Spy Cat Upgrade
-        SpyCatLevel = PlayerPrefs.GetInt("SpyCatLevel", 0);
-        SpyCatProduction = PlayerPrefs.GetFloat("SpyCatProduction", 0f);
-        SpyCatPrice = PlayerPrefs.GetFloat("SpyCatPrice", 1500000f);
-        SpyCatProdIncrease = PlayerPrefs.GetFloat("SpyCatProdIncrease", 1300f);
+        sphynxCatLevel = PlayerPrefs.GetInt("sphynxCatLevel", 0);
+        sphynxCatProduction = PlayerPrefs.GetFloat("sphynxCatProduction", 0f);
+        sphynxCatPrice = PlayerPrefs.GetFloat("sphynxCatPrice", 1500000f);
+        sphynxCatProdIncrease = PlayerPrefs.GetFloat("sphynxCatProdIncrease", 1300f);
 
         //Load Inbread Cat Upgrade
-        InbreadCatLevel = PlayerPrefs.GetInt("InbreadCatLevel", 0);
-        InbreadCatProduction = PlayerPrefs.GetFloat("InbreadCatProduction", 0f);
-        InbreadCatPrice = PlayerPrefs.GetFloat("InbreadCatPrice", 20000000f);
-        InbreadCatProdIncrease = PlayerPrefs.GetFloat("InbreadCatProdIncrease", 7500f);
+        ragdollCatLevel = PlayerPrefs.GetInt("ragdollCatLevel", 0);
+        ragdollCatProduction = PlayerPrefs.GetFloat("ragdollCatProduction", 0f);
+        ragdollCatPrice = PlayerPrefs.GetFloat("ragdollCatPrice", 20000000f);
+        ragdollCatProdIncrease = PlayerPrefs.GetFloat("ragdollCatProdIncrease", 7500f);
 
         //Load Void Cat Upgrade
-        VoidCatLevel = PlayerPrefs.GetInt("VoidCatLevel", 0);
-        VoidCatProduction = PlayerPrefs.GetFloat("VoidCatProduction", 0f);
-        VoidCatPrice = PlayerPrefs.GetFloat("VoidCatPrice", 320000000f);
-        VoidCatProdIncrease = PlayerPrefs.GetFloat("VoidCatProdIncrease", 45000f);
+        maineCoonCatLevel = PlayerPrefs.GetInt("maineCoonCatLevel", 0);
+        maineCoonCatProduction = PlayerPrefs.GetFloat("maineCoonCatProduction", 0f);
+        maineCoonCatPrice = PlayerPrefs.GetFloat("maineCoonCatPrice", 320000000f);
+        maineCoonCatProdIncrease = PlayerPrefs.GetFloat("maineCoonCatProdIncrease", 45000f);
     }
 
     public void Save()
     {
         //Save Kitten Upgrade
-        PlayerPrefs.SetInt("KittenLevel", KittenLevel);
-        PlayerPrefs.SetFloat("KittenProduction", KittenProduction);
-        PlayerPrefs.SetFloat("KittenPrice", KittenPrice);
-        PlayerPrefs.SetFloat("KittenProdIncrease", KittenProdIncrease);
+        PlayerPrefs.SetInt("tabbyCatLevel", tabbyCatLevel);
+        PlayerPrefs.SetFloat("tabbyCatProduction", tabbyCatProduction);
+        PlayerPrefs.SetFloat("tabbyCatPrice", tabbyCatPrice);
+        PlayerPrefs.SetFloat("tabbyCatProdIncrease", tabbyCatProdIncrease);
 
         //Save Chonker Upgrade
-        PlayerPrefs.SetInt("ChonkerLevel", ChonkerLevel);
-        PlayerPrefs.SetFloat("ChonkerProduction", ChonkerProduction);
-        PlayerPrefs.SetFloat("ChonkerPrice", ChonkerPrice);
-        PlayerPrefs.SetFloat("ChonkerProdIncrease", ChonkerProdIncrease);
+        PlayerPrefs.SetInt("abyssinianCatLevel", abyssinianCatLevel);
+        PlayerPrefs.SetFloat("abyssinianCatProduction", abyssinianCatProduction);
+        PlayerPrefs.SetFloat("abyssinianCatPrice", abyssinianCatPrice);
+        PlayerPrefs.SetFloat("abyssinianCatProdIncrease", abyssinianCatProdIncrease);
 
         //Save Bee Cat Upgrade
-        PlayerPrefs.SetInt("BeeCatLevel", BeeCatLevel);
-        PlayerPrefs.SetFloat("BeeCatProduction", BeeCatProduction);
-        PlayerPrefs.SetFloat("BeeCatPrice", BeeCatPrice);
-        PlayerPrefs.SetFloat("BeeCatProdIncrease", BeeCatProdIncrease);
+        PlayerPrefs.SetInt("munchkinCatLevel", munchkinCatLevel);
+        PlayerPrefs.SetFloat("munchkinCatProduction", munchkinCatProduction);
+        PlayerPrefs.SetFloat("munchkinCatPrice", munchkinCatPrice);
+        PlayerPrefs.SetFloat("munchkinCatProdIncrease", munchkinCatProdIncrease);
 
         //Save Lasagne Boy Upgrade
-        PlayerPrefs.SetInt("LasagneBoyLevel", LasagneBoyLevel);
-        PlayerPrefs.SetFloat("LasagneBoyProduction", LasagneBoyProduction);
-        PlayerPrefs.SetFloat("LasagneBoyPrice", LasagneBoyPrice);
-        PlayerPrefs.SetFloat("LasagneBoyProdIncrease", LasagneBoyProdIncrease);
+        PlayerPrefs.SetInt("siameseCatLevel", siameseCatLevel);
+        PlayerPrefs.SetFloat("siameseCatProduction", siameseCatProduction);
+        PlayerPrefs.SetFloat("siameseCatPrice", siameseCatPrice);
+        PlayerPrefs.SetFloat("siameseCatProdIncrease", siameseCatProdIncrease);
 
         //Save Pirate Cat Upgrade
-        PlayerPrefs.SetInt("PirateBoyLevel", PirateBoyLevel);
-        PlayerPrefs.SetFloat("PirateBoyProduction", PirateBoyProduction);
-        PlayerPrefs.SetFloat("PirateBoyPrice", PirateBoyPrice);
-        PlayerPrefs.SetFloat("PirateBoyProdIncrease", PirateBoyProdIncrease);
+        PlayerPrefs.SetInt("scottishFoldCatLevel", scottishFoldCatLevel);
+        PlayerPrefs.SetFloat("scottishFoldCatProduction", scottishFoldCatProduction);
+        PlayerPrefs.SetFloat("scottishFoldCatPrice", scottishFoldCatPrice);
+        PlayerPrefs.SetFloat("scottishFoldCatProdIncrease", scottishFoldCatProdIncrease);
 
         //Save Spy Cat Upgrade
-        PlayerPrefs.SetInt("SpyCatLevel", SpyCatLevel);
-        PlayerPrefs.SetFloat("SpyCatProduction", SpyCatProduction);
-        PlayerPrefs.SetFloat("SpyCatPrice", SpyCatPrice);
-        PlayerPrefs.SetFloat("SpyCatProdIncrease", SpyCatProdIncrease);
+        PlayerPrefs.SetInt("sphynxCatLevel", sphynxCatLevel);
+        PlayerPrefs.SetFloat("sphynxCatProduction", sphynxCatProduction);
+        PlayerPrefs.SetFloat("sphynxCatPrice", sphynxCatPrice);
+        PlayerPrefs.SetFloat("sphynxCatProdIncrease", sphynxCatProdIncrease);
 
         //Save Inbread Cat Upgrade
-        PlayerPrefs.SetInt("InbreadCatLevel", InbreadCatLevel);
-        PlayerPrefs.SetFloat("InbreadCatProduction", InbreadCatProduction);
-        PlayerPrefs.SetFloat("InbreadCatPrice", InbreadCatPrice);
-        PlayerPrefs.SetFloat("InbreadCatProdIncrease", InbreadCatProdIncrease);
+        PlayerPrefs.SetInt("ragdollCatLevel", ragdollCatLevel);
+        PlayerPrefs.SetFloat("ragdollCatProduction", ragdollCatProduction);
+        PlayerPrefs.SetFloat("ragdollCatPrice", ragdollCatPrice);
+        PlayerPrefs.SetFloat("ragdollCatProdIncrease", ragdollCatProdIncrease);
 
         //Save Void Cat Upgrade
-        PlayerPrefs.SetInt("VoidCatLevel", VoidCatLevel);
-        PlayerPrefs.SetFloat("VoidCatProduction", VoidCatProduction);
-        PlayerPrefs.SetFloat("VoidCatPrice", VoidCatPrice);
-        PlayerPrefs.SetFloat("VoidCatProdIncrease", VoidCatProdIncrease);
+        PlayerPrefs.SetInt("maineCoonCatLevel", maineCoonCatLevel);
+        PlayerPrefs.SetFloat("maineCoonCatProduction", maineCoonCatProduction);
+        PlayerPrefs.SetFloat("maineCoonCatPrice", maineCoonCatPrice);
+        PlayerPrefs.SetFloat("maineCoonCatProdIncrease", maineCoonCatProdIncrease);
 
     }
 
@@ -125,110 +125,227 @@ public class Upgrades : MonoBehaviour
 
         catClick = CatButton.GetComponent<CatClick>(); //Find The Main cat click script
 
-        ChonkerPriceText.text = "" + UpgradesFormatting(ChonkerPrice); //Initialize PriceTag
-        ChonkerLevelText.text = "" + ChonkerLevel; //Initialize LevelTag
+        abyssinianCatPriceText.text = "" + UpgradesFormatting(abyssinianCatPrice); //Initialize PriceTag
+        abyssinianCatLevelText.text = "" + abyssinianCatLevel; //Initialize LevelTag
 
-        KittenPriceText.text = "" + UpgradesFormatting(KittenPrice);
-        KittenLevelText.text = "" + KittenLevel;
+        tabbyCatPriceText.text = "" + UpgradesFormatting(tabbyCatPrice);
+        tabbyCatLevelText.text = "" + tabbyCatLevel;
 
-        BeeCatPriceText.text = "" + UpgradesFormatting(BeeCatPrice);
-        BeeCatLevelText.text = "" + BeeCatLevel;
+        munchkinCatPriceText.text = "" + UpgradesFormatting(munchkinCatPrice);
+        munchkinCatLevelText.text = "" + munchkinCatLevel;
 
-        LasagneBoyPriceText.text = "" + UpgradesFormatting(LasagneBoyPrice);
-        LasagneBoyLevelText.text = "" + LasagneBoyLevel;
+        siameseCatPriceText.text = "" + UpgradesFormatting(siameseCatPrice);
+        siameseCatLevelText.text = "" + siameseCatLevel;
 
-        PirateBoyPriceText.text = "" + UpgradesFormatting(PirateBoyPrice);
-        PirateBoyLevelText.text = "" + PirateBoyLevel;
+        scottishFoldCatPriceText.text = "" + UpgradesFormatting(scottishFoldCatPrice);
+        scottishFoldCatLevelText.text = "" + scottishFoldCatLevel;
 
-        SpyCatPriceText.text = "" + UpgradesFormatting(SpyCatPrice);
-        SpyCatLevelText.text = "" + SpyCatLevel;
+        sphynxCatPriceText.text = "" + UpgradesFormatting(sphynxCatPrice);
+        sphynxCatLevelText.text = "" + sphynxCatLevel;
 
-        InbreadCatPriceText.text = "" + UpgradesFormatting(InbreadCatPrice);
-        InbreadCatLevelText.text = "" + InbreadCatLevel;
+        ragdollCatPriceText.text = "" + UpgradesFormatting(ragdollCatPrice);
+        ragdollCatLevelText.text = "" + ragdollCatLevel;
 
-        VoidCatPriceText.text = "" + UpgradesFormatting(VoidCatPrice);
-        VoidCatLevelText.text = "" + VoidCatLevel;
+        maineCoonCatPriceText.text = "" + UpgradesFormatting(maineCoonCatPrice);
+        maineCoonCatLevelText.text = "" + maineCoonCatLevel;
+
+        persianCatPriceText.text = "" + UpgradesFormatting(persianCatPrice);
+        persianCatLevelText.text = "" + persianCatLevel;
+
+        norwegianForestCatPriceText.text = "" + UpgradesFormatting(norwegianForestCatPrice);
+        norwegianForestCatLevelText.text = "" + norwegianForestCatLevel;
+
+        bengalCatPriceText.text = "" + UpgradesFormatting(bengalCatPrice);
+        bengalCatLevelText.text = "" + bengalCatLevel;
+
+        savannahCatPriceText.text = "" + UpgradesFormatting(savannahCatPrice);
+        savannahCatLevelText.text = "" + savannahCatLevel;
 
         InvokeRepeating("ProductionPerSecond", 0f, 1.0f); //Run the production every second.
         InvokeRepeating("Save", 0f, 5f); //Call the Save method every 5 seconds
-
-        HandlePurchaseMultiple();
     }
 
     //---------------Shop Menu---------------
 
+    //Tabby Cat Upgrade
+    private int tabbyCatLevel = 0;
+    private float tabbyCatProduction = 0f;
+    private float tabbyCatPrice = 20f;
+    private float tabbyCatProdIncrease = 0.1f;
+    public float tabbyCatMultiplyer = 1;
+    public TMP_Text tabbyCatPriceText;
+    public TMP_Text tabbyCatLevelText;
+    public GameObject greyOutImageAbyssinian;
 
-    //Kitten Upgrade
-    private int KittenLevel;
-    private float KittenProduction;
-    public float KittenPrice;
-    public float KittenProdIncrease;
-    public int KittenMultiplyer;
-    public TMP_Text KittenPriceText;
-    public TMP_Text KittenLevelText;
-
-    public void KittenButton()
+    public void TabbyCatButton()
     {
-        if (catClick.Score != 0 && catClick.Score >= KittenPrice) //Check if the score is higher or equal to the price
-        {
-            catClick.Score = catClick.Score - KittenPrice; // Removes the amount of score it cost to purchase
+        UpgradesMethod(ref tabbyCatLevel, ref tabbyCatProduction, ref tabbyCatPrice, ref tabbyCatProdIncrease, ref tabbyCatMultiplyer, ref tabbyCatPriceText, ref tabbyCatLevelText);
 
-            KittenLevel++; //Add 1 to the level amount
-            KittenProduction = (KittenProdIncrease * KittenLevel) * KittenMultiplyer; //Increase the production of the upgrade if there is a multiplyer add it too
-            KittenPrice = Mathf.Ceil(20 * Mathf.Pow(GlobalMultiplyer, KittenLevel)); //Increase price by the global multiplier value to the power of the level of the upgrade
-            //KittenPrice = 20 * (Mathf.Pow(GlobalMultiplyer, 1) * (Mathf.Pow(GlobalMultiplyer, 10) - 1)) / GlobalMultiplyer - 1;
-
-            KittenPriceText.text = "" + UpgradesFormatting(KittenPrice);
-            KittenLevelText.text = "" + KittenLevel;
-
-            Debug.Log("Level is: " + KittenLevel);
-            Debug.Log("Price is: " + KittenPrice);
-            Debug.Log("Production is: " + KittenProduction);
-
-        }
-        else Debug.Log("You're Poor!");
+        greyOutImageAbyssinian.SetActive(false);
     }
 
+    //Abyssinian Cat Upgrade
+    private int abyssinianCatLevel = 0; //What Level it current is
+    private float abyssinianCatProduction = 0f; //How much score it produces per second
+    private float abyssinianCatPrice = 100f; //Its current price
+    private float abyssinianCatProdIncrease = 1f; //The amount of production increase per level
+    public float abyssinianCatMultiplayer = 1;
+    public TMP_Text abyssinianCatPriceText;
+    public TMP_Text abyssinianCatLevelText;
 
-    //Chonker Upgrade
-    private int ChonkerLevel; //What Level it current is
-    private float ChonkerProduction; //How much score it produces per second
-    public float ChonkerPrice; //Its current price
-    public float ChonkerProdIncrease; //The amount of production increase per level
-    public int ChonkerMultiplayer;
-    public TMP_Text ChonkerPriceText;
-    public TMP_Text ChonkerLevelText;
-
-    public void ChonkerButton()
+    public void AbyssinianCatButton()
     {
-        UpgradesMethod(ref ChonkerLevel, ref ChonkerProduction, ref ChonkerPrice, ref ChonkerProdIncrease, ref ChonkerMultiplayer, ref ChonkerPriceText, ref ChonkerLevelText);
-
-/*       
-        if (catClick.Score != 0 && catClick.Score >= ChonkerPrice) //Check if the score is higher or equal to the price
-        {
-            catClick.Score = catClick.Score - ChonkerPrice; // Removes the amount of score it cost to purchase
-
-            ChonkerLevel++; //Add 1 to the level amount
-            ChonkerProduction = (ChonkerProdIncrease * ChonkerLevel) * ChonkerMultiplayer; //Increase the production of the upgrade
-            ChonkerPrice = Mathf.Ceil(100 * Mathf.Pow(GlobalMultiplyer,ChonkerLevel)); //Increase price by the global multiplier value
-
-            ChonkerPriceText.text = "" + UpgradesFormatting(ChonkerPrice);
-            ChonkerLevelText.text = "" + ChonkerLevel;
-
-            Debug.Log("Level is: " + ChonkerLevel);
-            Debug.Log("Price is: " + ChonkerPrice);
-            Debug.Log("Production is: " + ChonkerProduction);
-
-        }
-        else Debug.Log("You're Poor!");*/
+        UpgradesMethod(ref abyssinianCatLevel, ref abyssinianCatProduction, ref abyssinianCatPrice, ref abyssinianCatProdIncrease, ref abyssinianCatMultiplayer, ref abyssinianCatPriceText, ref abyssinianCatLevelText);
     }
 
+    //Munchkin Cat Upgrade
+    private int munchkinCatLevel = 0;
+    private float munchkinCatProduction = 0f;
+    private float munchkinCatPrice = 1000f;
+    private float munchkinCatProdIncrease = 7f;
+    public float munchkinCatMultiplayer = 1;
+    public TMP_Text munchkinCatPriceText;
+    public TMP_Text munchkinCatLevelText;
 
-    public void UpgradesMethod(ref int Level, ref float Production, ref float Price, ref float ProdIncrease, ref int Multiplyer, ref TMP_Text PriceText, ref TMP_Text LevelText)
+    public void MunchkinCatButton()
+    {
+        UpgradesMethod(ref munchkinCatLevel, ref munchkinCatProduction, ref munchkinCatPrice, ref munchkinCatProdIncrease, ref munchkinCatMultiplayer, ref munchkinCatPriceText, ref munchkinCatLevelText);
+    }
+
+    //Siamese Cat Upgrade
+    private int siameseCatLevel = 0;
+    private float siameseCatProduction = 0f;
+    private float siameseCatPrice = 12500f;
+    private float siameseCatProdIncrease = 50f;
+    public float siameseCatMultiplayer = 1;
+    public TMP_Text siameseCatPriceText;
+    public TMP_Text siameseCatLevelText;
+
+    public void SiameseCatButton()
+    {
+        UpgradesMethod(ref siameseCatLevel, ref siameseCatProduction, ref siameseCatPrice, ref siameseCatProdIncrease, ref siameseCatMultiplayer, ref siameseCatPriceText, ref siameseCatLevelText);
+    }
+
+    //Scottish Fold Cat Upgrade
+    private int scottishFoldCatLevel = 0;
+    private float scottishFoldCatProduction = 0f;
+    private float scottishFoldCatPrice = 125000f;
+    private float scottishFoldCatProdIncrease = 250f;
+    public float scottishFoldCatMultiplayer = 1;
+    public TMP_Text scottishFoldCatPriceText;
+    public TMP_Text scottishFoldCatLevelText;
+
+    public void ScottishFoldCatButton()
+    {
+        UpgradesMethod(ref scottishFoldCatLevel, ref scottishFoldCatProduction, ref scottishFoldCatPrice, ref scottishFoldCatProdIncrease, ref scottishFoldCatMultiplayer, ref scottishFoldCatPriceText, ref scottishFoldCatLevelText);
+    }
+    
+    //Sphynx Cat Upgrade
+    private int sphynxCatLevel = 0;
+    private float sphynxCatProduction = 0f;
+    private float sphynxCatPrice = 1500000f;
+    private float sphynxCatProdIncrease = 1500f;
+    public float sphynxCatMultiplayer = 1;
+    public TMP_Text sphynxCatPriceText;
+    public TMP_Text sphynxCatLevelText;
+
+    public void SphynxCatButton()
+    {
+        UpgradesMethod(ref sphynxCatLevel, ref sphynxCatProduction, ref sphynxCatPrice, ref sphynxCatProdIncrease, ref sphynxCatMultiplayer, ref sphynxCatPriceText, ref sphynxCatLevelText);
+    }
+
+    //Ragdoll Cat Upgrade
+    private int ragdollCatLevel = 0;
+    private float ragdollCatProduction = 0f;
+    private float ragdollCatPrice = 20000000f;
+    private float ragdollCatProdIncrease = 7600f;
+    public float ragdollCatMultiplayer = 1;
+    public TMP_Text ragdollCatPriceText;
+    public TMP_Text ragdollCatLevelText;
+
+    public void RagdollCatButton()
+    {
+        UpgradesMethod(ref ragdollCatLevel, ref ragdollCatProduction, ref ragdollCatPrice, ref ragdollCatProdIncrease, ref ragdollCatMultiplayer, ref ragdollCatPriceText, ref ragdollCatLevelText);
+    }
+
+    //Maine Coon Cat Upgrade
+    private int maineCoonCatLevel = 0;
+    private float maineCoonCatProduction = 0f;
+    private float maineCoonCatPrice = 320000000;
+    private float maineCoonCatProdIncrease = 43000f;
+    public float maineCoonCatMultiplayer = 1;
+    public TMP_Text maineCoonCatPriceText;
+    public TMP_Text maineCoonCatLevelText;
+
+    public void MaineCoonCatButton()
+    {
+        UpgradesMethod(ref maineCoonCatLevel, ref maineCoonCatProduction, ref maineCoonCatPrice, ref maineCoonCatProdIncrease, ref maineCoonCatMultiplayer, ref maineCoonCatPriceText, ref maineCoonCatLevelText);
+    }
+
+    //Persian Cat Upgrades
+    private int persianCatLevel = 0;
+    private float persianCatProduction = 0f;
+    private float persianCatPrice = 5000000000f;
+    private float persianCatProdIncrease = 250000f;
+    public float persianCatMultiplayer = 1;
+    public TMP_Text persianCatPriceText;
+    public TMP_Text persianCatLevelText;
+
+    public void PersianCatButton()
+    {
+        UpgradesMethod(ref persianCatLevel, ref persianCatProduction, ref persianCatPrice, ref persianCatProdIncrease, ref persianCatMultiplayer, ref persianCatPriceText, ref persianCatLevelText);
+    }
+
+    //Norwegian Forest Cat Upgrades
+    private int norwegianForestCatLevel = 0;
+    private float norwegianForestCatProduction = 0f;
+    private float norwegianForestCatPrice = 75000000000f;
+    private float norwegianForestCatProdIncrease = 1600000f;
+    public float norwegianForestCatMultiplayer = 1;
+    public TMP_Text norwegianForestCatPriceText;
+    public TMP_Text norwegianForestCatLevelText;
+
+    public void NorwegianForestCatButton()
+    {
+        UpgradesMethod(ref norwegianForestCatLevel, ref norwegianForestCatProduction, ref norwegianForestCatPrice, ref norwegianForestCatProdIncrease, ref norwegianForestCatMultiplayer, ref norwegianForestCatPriceText, ref norwegianForestCatLevelText);
+    }
+
+    //Bengal Cat Upgrades
+    private int bengalCatLevel = 0;
+    private float bengalCatProduction = 0f;
+    private float bengalCatPrice = 1000000000000f;
+    private float bengalCatProdIncrease = 10000000f;
+    public float bengalCatMultiplayer = 1;
+    public TMP_Text bengalCatPriceText;
+    public TMP_Text bengalCatLevelText;
+
+    public void BengalCatButton()
+    {
+        UpgradesMethod(ref bengalCatLevel, ref bengalCatProduction, ref bengalCatPrice, ref bengalCatProdIncrease, ref bengalCatMultiplayer, ref bengalCatPriceText, ref bengalCatLevelText);
+    }
+
+    //Savannah Cat Upgrades
+    private int savannahCatLevel = 0;
+    private float savannahCatProduction = 0f;
+    private float savannahCatPrice = 15000000000000f;
+    private float savannahCatProdIncrease = 75000000f;
+    public float savannahCatMultiplayer = 1;
+    public TMP_Text savannahCatPriceText;
+    public TMP_Text savannahCatLevelText;
+
+    public void SavannahCatButton()
+    {
+        UpgradesMethod(ref savannahCatLevel, ref savannahCatProduction, ref savannahCatPrice, ref savannahCatProdIncrease, ref savannahCatMultiplayer, ref savannahCatPriceText, ref savannahCatLevelText);
+    }
+
+    //----------------------------------------------------------------------------------------------------------------------------------------------------\\
+
+    //Generalised method for upgrades
+    public void UpgradesMethod(ref int Level, ref float Production, ref float Price, ref float ProdIncrease, ref float Multiplyer, ref TMP_Text PriceText, ref TMP_Text LevelText)
     {
         if (catClick.Score != 0 && catClick.Score >= Price)
         {
-            catClick.Score = catClick.Score - Price;
+            catClick.Score -= Price;
 
             Level++;
             Production = (ProdIncrease * Level) * Multiplyer;
@@ -240,199 +357,21 @@ public class Upgrades : MonoBehaviour
         else Debug.Log("Broke");
     }
 
-
-    //Bee Cat Upgrade
-    private int BeeCatLevel;
-    private float BeeCatProduction;
-    public float BeeCatPrice;
-    public float BeeCatProdIncrease;
-    public int BeeCatMultiplayer;
-    public TMP_Text BeeCatPriceText;
-    public TMP_Text BeeCatLevelText;
-
-    public void BeeCatButton()
-    {
-        if (catClick.Score != 0 && catClick.Score >= BeeCatPrice) //Check if the score is higher or equal to the price
+    /*    public void UpdateCurrentPrice(ref float Production, ref float ProdIncrease, ref int Level, ref float Multiplyer)
         {
-            catClick.Score = catClick.Score - BeeCatPrice; // Removes the amount of score it cost to purchase
+            Production = (ProdIncrease * Level) * Multiplyer;
+        }*/
 
-            BeeCatLevel++; //Add 1 to the level amount
-            BeeCatProduction = (BeeCatProdIncrease * BeeCatLevel) * BeeCatMultiplayer; //Increase the production of the upgrade
-            BeeCatPrice = Mathf.Ceil(1000 * Mathf.Pow(GlobalMultiplyer,BeeCatLevel)); //Increase price by the global multiplier value
-
-            BeeCatPriceText.text = "" + UpgradesFormatting(BeeCatPrice);
-            BeeCatLevelText.text = "" + BeeCatLevel;
-
-            Debug.Log("Level is: " + BeeCatLevel);
-            Debug.Log("Price is: " + BeeCatPrice);
-            Debug.Log("Production is: " + BeeCatProduction);
-
-        }
-        else Debug.Log("You're Poor!");
+    public void UpdateCurrentPrice()
+    {
+        tabbyCatProduction = (tabbyCatProdIncrease * tabbyCatLevel) * tabbyCatMultiplyer;
     }
-
-
-    //Lasagne Boy Upgrade
-    private int LasagneBoyLevel;
-    private float LasagneBoyProduction;
-    public float LasagneBoyPrice;
-    public float LasagneBoyProdIncrease;
-    public int LasagneBoyMultiplayer;
-    public TMP_Text LasagneBoyPriceText;
-    public TMP_Text LasagneBoyLevelText;
-
-    public void LasagneBoyButton()
-    {
-        if (catClick.Score != 0 && catClick.Score >= LasagneBoyPrice) //Check if the score is higher or equal to the price
-        {
-            catClick.Score = catClick.Score - LasagneBoyPrice; // Removes the amount of score it cost to purchase
-
-            LasagneBoyLevel++; //Add 1 to the level amount
-            LasagneBoyProduction = (LasagneBoyProdIncrease * LasagneBoyLevel) * LasagneBoyMultiplayer; //Increase the production of the upgrade
-            LasagneBoyPrice = Mathf.Ceil(12500 * Mathf.Pow(GlobalMultiplyer,LasagneBoyLevel)); //Increase price by the global multiplier value
-
-            LasagneBoyPriceText.text = "" + UpgradesFormatting(LasagneBoyPrice);
-            LasagneBoyLevelText.text = "" + LasagneBoyLevel;
-
-            Debug.Log("Level is: " + LasagneBoyLevel);
-            Debug.Log("Price is: " + LasagneBoyPrice);
-            Debug.Log("Production is: " + LasagneBoyProduction);
-
-        }
-        else Debug.Log("You're Poor!");
-    }
-
-    
-    //Pirate Cat Upgrade
-    private int PirateBoyLevel;
-    private float PirateBoyProduction;
-    public float PirateBoyPrice;
-    public float PirateBoyProdIncrease;
-    public int PirateBoyMultiplayer;
-    public TMP_Text PirateBoyPriceText;
-    public TMP_Text PirateBoyLevelText;
-
-    public void PirateCatButton()
-    {
-        if (catClick.Score != 0 && catClick.Score >= PirateBoyPrice) //Check if the score is higher or equal to the price
-        {
-            catClick.Score = catClick.Score - PirateBoyPrice; // Removes the amount of score it cost to purchase
-
-            PirateBoyLevel++; //Add 1 to the level amount
-            PirateBoyProduction = (PirateBoyProdIncrease * PirateBoyLevel) * PirateBoyMultiplayer; //Increase the production of the upgrade
-            PirateBoyPrice = Mathf.Ceil(125000 * Mathf.Pow(GlobalMultiplyer,LasagneBoyLevel)); //Increase price by the global multiplier value
-
-            PirateBoyPriceText.text = "" + UpgradesFormatting(PirateBoyPrice);
-            PirateBoyLevelText.text = "" + PirateBoyLevel;
-
-            Debug.Log("Level is: " + PirateBoyLevel);
-            Debug.Log("Price is: " + PirateBoyPrice);
-            Debug.Log("Production is: " + PirateBoyProduction);
-
-        }
-        else Debug.Log("You're Poor!");
-    } 
-
-    
-    //Spy Cat Upgrade
-    private int SpyCatLevel;
-    private float SpyCatProduction;
-    public float SpyCatPrice;
-    public float SpyCatProdIncrease;
-    public int SpyCatMultiplayer;
-    public TMP_Text SpyCatPriceText;
-    public TMP_Text SpyCatLevelText;
-
-    public void SpyCatButton()
-    {
-        if (catClick.Score != 0 && catClick.Score >= SpyCatPrice) //Check if the score is higher or equal to the price
-        {
-            catClick.Score = catClick.Score - SpyCatPrice; // Removes the amount of score it cost to purchase
-
-            SpyCatLevel++; //Add 1 to the level amount
-            SpyCatProduction = (SpyCatProdIncrease * SpyCatLevel) * SpyCatMultiplayer; //Increase the production of the upgrade
-            SpyCatPrice = Mathf.Ceil(1500000 * Mathf.Pow(GlobalMultiplyer,SpyCatLevel)); //Increase price by the global multiplier value
-
-            SpyCatPriceText.text = "" + UpgradesFormatting(SpyCatPrice);
-            SpyCatLevelText.text = "" + SpyCatLevel;
-
-            Debug.Log("Level is: " + SpyCatLevel);
-            Debug.Log("Price is: " + SpyCatPrice);
-            Debug.Log("Production is: " + SpyCatProduction);
-
-        }
-        else Debug.Log("You're Poor!");
-    }
-
-
-    //Inbread Cat Upgrade
-    private int InbreadCatLevel;
-    private float InbreadCatProduction;
-    public float InbreadCatPrice;
-    public float InbreadCatProdIncrease;
-    public int InbreadCatMultiplayer;
-    public TMP_Text InbreadCatPriceText;
-    public TMP_Text InbreadCatLevelText;
-
-    public void InbreadCatButton()
-    {
-        if (catClick.Score != 0 && catClick.Score >= InbreadCatPrice) //Check if the score is higher or equal to the price
-        {
-            catClick.Score = catClick.Score - InbreadCatPrice; // Removes the amount of score it cost to purchase
-
-            InbreadCatLevel++; //Add 1 to the level amount
-            InbreadCatProduction = (InbreadCatProdIncrease * InbreadCatLevel) * InbreadCatMultiplayer; //Increase the production of the upgrade
-            InbreadCatPrice = Mathf.Ceil(20000000 * Mathf.Pow(GlobalMultiplyer,InbreadCatLevel)); //Increase price by the global multiplier value
-
-            InbreadCatPriceText.text = "" + UpgradesFormatting(InbreadCatPrice);
-            InbreadCatLevelText.text = "" + InbreadCatLevel;
-
-            Debug.Log("Level is: " + InbreadCatLevel);
-            Debug.Log("Price is: " + InbreadCatPrice);
-            Debug.Log("Production is: " + InbreadCatProduction);
-
-        }
-        else Debug.Log("You're Poor!");
-    }
-
-    //Void Cat Upgrade
-    private int VoidCatLevel;
-    private float VoidCatProduction;
-    public float VoidCatPrice;
-    public float VoidCatProdIncrease;
-    public int VoidCatMultiplayer;
-    public TMP_Text VoidCatPriceText;
-    public TMP_Text VoidCatLevelText;
-
-    public void VoidCatButton()
-    {
-        if (catClick.Score != 0 && catClick.Score >= VoidCatPrice) //Check if the score is higher or equal to the price
-        {
-            catClick.Score = catClick.Score - VoidCatPrice; // Removes the amount of score it cost to purchase
-
-            VoidCatLevel++; //Add 1 to the level amount
-            VoidCatProduction = (VoidCatProdIncrease * VoidCatLevel) * VoidCatMultiplayer; //Increase the production of the upgrade
-            VoidCatPrice = Mathf.Ceil(320000000 * Mathf.Pow(GlobalMultiplyer,VoidCatLevel)); //Increase price by the global multiplier value
-
-            VoidCatPriceText.text = UpgradesFormatting(VoidCatPrice);
-            VoidCatLevelText.text = "" + VoidCatLevel;
-
-            Debug.Log("Level is: " + VoidCatLevel);
-            Debug.Log("Price is: " + VoidCatPrice);
-            Debug.Log("Production is: " + VoidCatProduction);
-
-        }
-        else Debug.Log("You're Poor!");
-    }
-
-
-
 
     public TMP_Text ScorePerSecond;
     //Calculates the total production per second.
     public double ProductionPerSecond()
     {
-        float TotalProduction = KittenProduction + ChonkerProduction + BeeCatProduction + LasagneBoyProduction + PirateBoyProduction + SpyCatProduction + InbreadCatProduction + VoidCatProduction;
+        float TotalProduction = tabbyCatProduction + abyssinianCatProduction + munchkinCatProduction + siameseCatProduction + scottishFoldCatProduction + sphynxCatProduction + ragdollCatProduction + maineCoonCatProduction;
         catClick.Score += TotalProduction;
         ScorePerSecond.text = Convert.ToDecimal(catClick.totalClicksPerSecond + TotalProduction).ToString("#,##0.00") + " Snacks Per Second";
 
@@ -502,35 +441,4 @@ public class Upgrades : MonoBehaviour
 
         return numStr.ToString("0.000") + " " + suffix;
     }
-
-    public TMP_Text MultiplePurchaseText;
-    private int timesClicked = 0;
-    public void HandlePurchaseMultiple()
-    {
-        switch(timesClicked)
-        {
-            case 4:
-                MultiplePurchaseText.text = "X100";
-                timesClicked = 0;
-                break;
-            case 3:
-                MultiplePurchaseText.text = "X50";
-                timesClicked++;
-                break;
-            case 2:
-                MultiplePurchaseText.text = "X25";
-                timesClicked++;
-                break;
-            case 1:
-                MultiplePurchaseText.text = "X10";
-                timesClicked++;
-                break;
-            default:
-                MultiplePurchaseText.text = "X1";
-                timesClicked++;
-                break;
-        }
-    }
-
-
 }

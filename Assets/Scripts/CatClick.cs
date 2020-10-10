@@ -69,7 +69,6 @@ public class CatClick : MonoBehaviour
         Vector3 SnackPoint = new Vector3();
         SnackPoint = cam.ScreenToWorldPoint(new Vector3(UnityEngine.Random.Range(cam.pixelWidth, 0f), cam.pixelHeight - 5f, cam.nearClipPlane + 1f));  //Make a new Vector2 at random coordinates above the screen
         DropSnack = Instantiate(DroppingSnack, SnackPoint, Quaternion.Euler(0.0f, 0.0f, UnityEngine.Random.Range(0.0f, 360.0f))); //Create a new Snack object at that Vector2 and random rotation.
-        
 
         if (AmountTillNextSpooteCan == 0) //Handles drpping of the Milk
         {
@@ -91,10 +90,12 @@ public class CatClick : MonoBehaviour
         }
         else timer = 0;
 
-        if (progressBar.current == 0)
+
+        //Disables the button so the player cannot click anymore when the angerbar is at 0
+        if (progressBar.current < 1)
         {
-            catButton.enabled = !catButton.enabled;
-            catUIButton.enabled = !catUIButton.enabled;
+            catButton.enabled = false;
+            catUIButton.enabled = false;
         }
         else
         {

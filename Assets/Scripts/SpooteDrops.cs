@@ -32,11 +32,10 @@ public class SpooteDrops : MonoBehaviour
     public void AddSpoot()
     {
         SpooteAmount++;
-        SpooteAmountText.text = "" + SpooteAmount;
     }
 
     void Update()
     {
-        
+        SpooteAmountText.text = "" + SpooteAmount;
     }
 }

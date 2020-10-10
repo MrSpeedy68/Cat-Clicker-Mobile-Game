@@ -26,14 +26,19 @@ public class AngerBar : MonoBehaviour
     {
         //Every time you click the current value in the bar is decreased by an amount
         //if the bar is less than the decrease amount then dont decreease
-        if(progressBar.current >= 1 && progressBar.current != 0)
+        if (progressBar.current >= 1 && progressBar.current != 0)
         {
             progressBar.current--;
+        }
+        if (progressBar.current < 0.99 && progressBar.current != 0) //Because the bar is a float, need to eliminate that last remaining value below 1
+        {
+            progressBar.current = 0;
         }
     }
 
     public float targetTime = 5.0f; //The amount of time since last click till the par regens
-    public bool timerStart = false;
+    private bool timerStart = false; //Boolean to start or stop timer
+    public int increaseOverTimeAmount = 5; //How much over time the bar will increase
 
     // Update is called once per frame
     void Update()
@@ -50,15 +55,12 @@ public class AngerBar : MonoBehaviour
         {
             targetTime -= Time.deltaTime;
 
-            if (targetTime <= 0.0f)
+            if (targetTime <= 0.0f && progressBar.current < progressBar.maximum)
             {
-                if(progressBar.current < progressBar.maximum) 
-                {
-                    progressBar.current++;
-                }      
+                progressBar.current += increaseOverTimeAmount * Time.deltaTime;     
             }
         }
-        else targetTime = 5.0f;
+        else targetTime = 1.0f;
     }
 
 

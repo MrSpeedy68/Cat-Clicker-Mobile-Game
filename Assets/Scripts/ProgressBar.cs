@@ -19,9 +19,9 @@ public class ProgressBar : MonoBehaviour
     }
 #endif
 
-    public int minimum = 0;
-    public int maximum = 100;
-    public int current = 100;
+    public float minimum = 0;
+    public float maximum = 100;
+    public float current = 100;
     public Image mask;
     //public Image fill;
     //public Color color;

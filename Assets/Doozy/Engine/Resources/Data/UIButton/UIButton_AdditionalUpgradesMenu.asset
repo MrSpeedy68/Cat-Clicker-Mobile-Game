@@ -10,22 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f42f06ff6cc543ea942180e019f0fc8d, type: 3}
-  m_Name: UIButton_UpgradeMenu
+  m_Name: UIButton_AdditionalUpgradesMenu
   m_EditorClassIdentifier: 
-  CategoryName: Upgrade Menu
+  CategoryName: Additional Upgrades Menu
   DatabaseType: 0
   Names:
   - Back
-  - Tabby Cat Upgrade
-  - Abyssinian Cat Upgrade
-  - Munchkin Cat Upgrade
-  - Siamese Cat Upgrade
-  - Scottish Fold Cat Upgrade
-  - Sphynx Cat Upgrade
-  - Ragdoll Cat Upgrade
-  - Maine Coon Cat Upgrade
-  - Persian Cat Upgrade
-  - Norwegian Forest Cat Upgrade
-  - Bengal Cat Upgrade
-  - Savannah Cat Upgrade
-  - Next Page
+  - Exit Back To Main
